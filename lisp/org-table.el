@@ -6281,7 +6281,7 @@ list of the fields in the rectangle."
     (let ((case-fold-search t) (id-loc nil)
 	  ;; Protect a bunch of variables from being overwritten by
 	  ;; the context of the remote table.
-	  org-table-column-names org-table-column-name-regexp
+          org-table-column-names (org-table-column-name-regexp org-table-column-name-regexp)
 	  org-table-local-parameters org-table-named-field-locations
 	  org-table-current-line-types
 	  org-table-current-begin-pos org-table-dlines
