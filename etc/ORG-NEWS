@@ -221,6 +221,16 @@ Running shell blocks with the ~:session~ header freezes Emacs until
 execution completes.  The new ~:async~ header allows users to continue
 editing with Emacs while a ~:session~ block executes.
 
+*** ~remote~ ~org-table~ can now refer to variables in other files
+
+Table formulae can now refer to data from tables in other files.
+
+Example:
+
+#+BEGIN_src org
+#+TBLFM: $2='(identity remote(file:./org-wile-with-tables.org,@@#$Value))
+#+END_src
+
 ** Miscellaneous
 *** =org-crypt.el= now applies initial visibility settings to decrypted entries
 
